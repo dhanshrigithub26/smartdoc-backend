@@ -11,7 +11,7 @@ import com.yari.smartdoc.service.DocumentService;
 
 @RestController
 @RequestMapping("/api/documents")
-@CrossOrigin("*")
+@CrossOrigin(origins = {"http://localhost:4200", "https://smartdoc.vercel.app"})
 public class DocumentController {
 
     private final DocumentService documentService;

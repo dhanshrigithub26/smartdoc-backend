@@ -10,7 +10,7 @@ import com.yari.smartdoc.service.NoteService;
 
 @RestController
 @RequestMapping("/api/notes")
-@CrossOrigin("*")
+@CrossOrigin(origins = {"http://localhost:4200", "https://smartdoc.vercel.app"})
 public class NoteController {
 
     private final NoteService noteService;

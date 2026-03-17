@@ -8,7 +8,7 @@ import com.yari.smartdoc.service.UserService;
 import java.util.Optional;
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "https://smartdoc.vercel.app"})
 
 public class UserController {
     private final UserService userService;
